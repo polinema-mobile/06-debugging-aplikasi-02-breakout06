@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private char ACTION;
     private double val1 = Double.NaN;
     private double val2;
+    private String value;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -149,6 +150,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (t1.getText().length() > 0) {
+                    value = "" +val1;
+                    t1.setText(value);
                     ACTION = MODULUS;
                     operation();
                     if (!ifReallyDecimal()) {
@@ -167,6 +170,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (t1.getText().length() > 0) {
+                    value = "" +val1;
+                    t1.setText(value);
                     ACTION = ADDITION;
                     operation();
                     if (!ifReallyDecimal()) {
@@ -185,6 +190,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (t1.getText().length() > 0) {
+                    value = "" +val1;
+                    t1.setText(value);
                     ACTION = SUBTRACTION;
                     operation();
                     if (t1.getText().length() > 0)
@@ -204,6 +211,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (t1.getText().length() > 0) {
+                    value = "" +val1;
+                    t1.setText(value);
                     ACTION = MULTIPLICATION;
                     operation();
                     if (!ifReallyDecimal()) {
@@ -222,6 +231,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (t1.getText().length() > 0) {
+                    value = "" +val1;
+                    t1.setText(value);
                     ACTION = DIVISION;
                     operation();
                     if (ifReallyDecimal()) {
